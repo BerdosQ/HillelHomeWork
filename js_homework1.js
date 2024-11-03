@@ -1,6 +1,6 @@
 'number' + 3 + 3 // number33
 
-null + 3 //
+null + 3 //3
 
 5 && "qwerty" // true
 
