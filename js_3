@@ -1,0 +1,27 @@
+let x = prompt("Введіть x:"); // про преведення теж завтикав, піддивився
+let n = prompt("Введіть степінь:");
+x = +x;
+n = +n;
+
+function pow(x, n) {
+    if (x == 0) {
+        return 0;
+    }
+  if (n >= 0){
+    let result = 1; 
+    for (let i = 1; i <= n; i++) {
+    result *= x; 
+  }
+  return result;
+}
+else {
+    let modN = -n;
+    let result = 1; 
+    for (let i = 1; i <= modN; i++) {
+    result *= x; 
+}
+result = 1 / result;
+return result;
+}
+}
+console.log("Результат для " + x + " в степені "+ n + ": " + pow(x, n));
